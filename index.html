@@ -94,9 +94,51 @@
 
     </footer>
     <!-- Footer Area End -->
+    <!-- Details modal Start-->
+    <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle rounded-lg p-10">
+        <form method="dialog" class="modal-box">
+            <div id="phoneDetails">
+
+            </div>
+            <div class="modal-action flex justify-end">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-[#DC3545]">Close</button>
+            </div>
+        </form>
+    </dialog>
+    <!-- Details modal Start-->
     <!-- Scripts File Link Here -->
     <script src="./scripts/main.js"></script>
 
+
+
+    <div class="bg-[#0D6EFD0D] p-12 rounded-lg">
+        <img src="${phone.image}" class="mx-auto bg-[#0D6EFD0D]">
+    </div>
+    <h3 class="font-bold text-2xl text-heading">${phone.phone_name}</h3>
+    <p class="text-body">There are many variations of passages of available, but the majority have suffered</p>
+    <h5 class="font-bold text-2xl text-heading">$999</h5>
+    <button class="secondary-btn" onclick="loadDetails('${phone.slug}')">Show Details</button>
+
+
+
+    <div class="bg-[#0D6EFD0D] p-12 rounded-lg mb-10">
+        <img src="${phone.image}" class="mx-auto  bg-[#0D6EFD0D]">
+    </div>
+    <h4 class="font-bold text-heading text-3xl">${phone.name}</h4>
+
+    <p class="text-body text-base">It is a long established fact that a reader will be distracted by the readable
+        content of
+        a page when looking at its layout.</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Storage:</b> ${phone?.mainFeatures?.storage}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Display Size :</b>
+        ${phone?.mainFeatures?.displaySize}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Chipset:</b> ${phone?.mainFeatures?.chipSet}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Memory:</b> ${phone?.mainFeatures?.memory}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Slug:</b> ${phone?.slug}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Release data:</b> ${phone?.releaseDate}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Brand:</b> ${phone?.brand}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">GPS:</b> ${phone?.others?.GPS}</p>
 </body>
 
 </html>
