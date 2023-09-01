@@ -74,13 +74,17 @@ function showDetails(phone) {
 
     <p class="text-body text-base">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
     <p class="text-xl text-body"><b class="text-heading font-semibold">Storage:</b> ${phone?.mainFeatures?.storage}</p>
-    <p class="text-xl text-body"><b class="text-heading font-semibold">Display Size :</b> ${phone?.mainFeatures?.displaySize}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">Display Size :</b> ${
+      phone?.mainFeatures?.displaySize
+    }</p>
     <p class="text-xl text-body"><b class="text-heading font-semibold">Chipset:</b> ${phone?.mainFeatures?.chipSet}</p>
     <p class="text-xl text-body"><b class="text-heading font-semibold">Memory:</b> ${phone?.mainFeatures?.memory}</p>
     <p class="text-xl text-body"><b class="text-heading font-semibold">Slug:</b> ${phone?.slug}</p>
     <p class="text-xl text-body"><b class="text-heading font-semibold">Release data:</b> ${phone?.releaseDate}</p>
     <p class="text-xl text-body"><b class="text-heading font-semibold">Brand:</b> ${phone?.brand}</p>
-    <p class="text-xl text-body"><b class="text-heading font-semibold">GPS:</b> ${phone?.others?.GPS}</p>
+    <p class="text-xl text-body"><b class="text-heading font-semibold">GPS:</b> ${
+      phone?.others?.GPS === undefined ? 'Data Not Found' : phone?.others?.GPS
+    }</p>
   `;
   singlePhone.classList.add('w-[47rem]', 'space-y-4');
   phoneDetails.appendChild(singlePhone);
