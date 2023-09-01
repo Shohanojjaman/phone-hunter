@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Hunter</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/phone1.png" type="image/x-icon">
+
     <!-- Fonts Link Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +20,8 @@
 
 <body class="font-poppins">
     <!-- Header Area Start -->
-    <header class="bg-[#0D6EFD0D] h-[50rem]">
-        <div class="container mx-auto max-sm:mx-5">
+    <header class="bg-[#0D6EFD0D] h-[50rem] mb-96">
+        <div class="container mx-auto max-sm:px-5">
             <!-- Nav Start -->
             <nav class="flex justify-between items-center py-12">
                 <a href="./index.html">
@@ -54,8 +57,28 @@
     </header>
     <!-- Header Area End -->
     <!-- Main Area Start -->
-    <main>
-
+    <main class="mb-28">
+        <!-- Container Start -->
+        <div class="container mx-auto max-sm:px-5">
+            <!-- Search Start -->
+            <div class="flex flex-col items-center">
+                <h3 class="text-4xl font-semibold text-center mb-7">Search your phone</h3>
+                <form action="" class="relative">
+                    <input type="text" name="searchField" id="searchField"
+                        class="bg-[#100F0F0D] w-[47rem] rounded-lg py-4 px-14 focus:outline-none text-body"
+                        placeholder="Search your phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        class="absolute top-4 left-4">
+                        <path
+                            d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3964 17.9998 12.4887 17.9998 10.4995C17.9998 8.51029 17.2096 6.60256 15.803 5.19599C14.3965 3.78941 12.4887 2.99921 10.4995 2.99921C8.51035 2.99921 6.60262 3.78941 5.19605 5.19599C3.78947 6.60256 2.99927 8.51029 2.99927 10.4995C2.99927 12.4887 3.78947 14.3964 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z"
+                            stroke="#706F6F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <button type="submit" class="btn absolute right-0 top-0 bottom-0">Search</button>
+                </form>
+            </div>
+            <!-- Search Start -->
+        </div>
+        <!-- Container End -->
     </main>
     <!-- Main Area End -->
     <!-- Footer Area Start -->
